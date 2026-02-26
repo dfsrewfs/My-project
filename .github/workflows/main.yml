@@ -1,14 +1,14 @@
 name: Setup SSHX (MacOS)
 
 on:
-  workflow_dispatch:   # Manual run button ke liye
+  workflow_dispatch: # Manual run button ke liye
   push:
     branches:
       - main
 
 jobs:
   setup-sshx:
-    runs-on: macos-latest
+    runs-on: tenki-standard-medium-4c-8g
 
     steps:
       - name: Checkout Repository
